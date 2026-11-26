@@ -4,155 +4,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WENSS | Digital Stamp Repository</title>
-
+<title>WENSS Digital Stamp</title>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#090909;
+ color:#f5f0e5;
 }
-
-body {
-  background: #080808;
-  color: #f5d889;
-  font-family: Georgia, serif;
+header{
+ padding:22px 7%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ border-bottom:1px solid #302718;
 }
-
-header {
-  padding: 25px 15px;
-  text-align: center;
-  border-bottom: 1px solid #b89542;
+.logo{
+ color:#d9b56d;
+ font-size:25px;
+ font-weight:bold;
+ letter-spacing:4px;
 }
-
-.logo {
-  font-size: 35px;
-  letter-spacing: 8px;
-  color: #e4c16b;
+nav a{
+ color:#eee;
+ text-decoration:none;
+ margin-left:20px;
+ font-size:14px;
 }
-
-.tagline {
-  color: #aaa;
-  font-size: 11px;
-  letter-spacing: 4px;
-  margin-top: 8px;
+.hero{
+ text-align:center;
+ padding:95px 20px 85px;
+ background:radial-gradient(ellipse at top,#302313,#090909 70%);
 }
-
-.hero {
-  text-align: center;
-  padding: 85px 20px;
+.tag{
+ color:#d9b56d;
+ letter-spacing:3px;
+ font-size:12px;
 }
-
-.hero h1 {
-  font-size: 34px;
-  margin-bottom: 20px;
+h1{
+ font-size:clamp(38px,8vw,68px);
+ margin:22px 0;
 }
-
-.hero p {
-  color: #bbb;
-  line-height: 1.8;
+h1 span{color:#d9b56d}
+.hero p{
+ color:#bcb5a8;
+ line-height:1.8;
+ max-width:550px;
+ margin:0 auto 30px;
 }
-
-.gold-line {
-  width: 75px;
-  height: 2px;
-  background: #d4af55;
-  margin: 25px auto;
+.btn{
+ display:inline-block;
+ background:#d9b56d;
+ color:#111;
+ padding:14px 25px;
+ border-radius:5px;
+ text-decoration:none;
+ font-weight:bold;
 }
-
-.button {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 30px;
-  border: 1px solid #d4af55;
-  color: #e8c66d;
-  text-decoration: none;
-  letter-spacing: 2px;
+section{
+ padding:65px 7%;
+ text-align:center;
 }
-
-.button:hover {
-  background: #d4af55;
-  color: #080808;
+h2{color:#d9b56d;font-size:30px}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:20px;
+ margin-top:35px;
 }
-
-.section {
-  padding: 45px 20px;
-  text-align: center;
+.card{
+ background:#15130f;
+ border:1px solid #49391f;
+ border-radius:12px;
+ padding:28px 20px;
 }
-
-.section h2 {
-  margin-bottom: 25px;
-  font-size: 26px;
+.card h3{color:#e1c17f}
+.card p{color:#bcb5a8;line-height:1.7}
+.stamps{
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ gap:9px;
+ margin:25px auto;
+ max-width:360px;
 }
-
-.card {
-  max-width: 400px;
-  margin: 15px auto;
-  padding: 30px 20px;
-  border: 1px solid #8e7138;
-  background: #111;
+.stamp{
+ width:43px;height:43px;
+ border:1px solid #c9a45d;
+ border-radius:50%;
+ display:grid;
+ place-items:center;
+ color:#d9b56d;
 }
-
-.card h3 {
-  margin-bottom: 12px;
-}
-
-.card p {
-  color: #aaa;
-  line-height: 1.7;
-}
-
-footer {
-  text-align: center;
-  padding: 30px 10px;
-  border-top: 1px solid #8e7138;
-  color: #888;
-  font-size: 12px;
-  letter-spacing: 2px;
+footer{
+ border-top:1px solid #302718;
+ padding:25px;
+ text-align:center;
+ color:#938a7b;
+ font-size:13px;
 }
 </style>
 </head>
-
 <body>
 
 <header>
-  <div class="logo">WENSS</div>
-  <div class="tagline">DIGITAL STAMP REPOSITORY</div>
+ <div class="logo">WENSS</div>
+ <nav><a href="#features">Features</a></nav>
 </header>
 
-<section class="hero">
-  <h1>Welcome to WENSS</h1>
-  <div class="gold-line"></div>
-  <p>
-    Your Premium Digital Stamp Collection.<br>
-    Discover. Explore. Collect.
-  </p>
-  <a href="#collection" class="button">EXPLORE COLLECTION</a>
+<div class="hero">
+ <div class="tag">SMART LOYALTY EXPERIENCE</div>
+ <h1>Reward Every<br><span>Visit.</span></h1>
+ <p>
+ A smarter digital stamp card system for modern cafes.
+ Simple, elegant and easy to use.
+ </p>
+ <a class="btn" href="#features">Explore WENSS</a>
+</div>
+
+<section id="features">
+ <div class="tag">WHY WENSS?</div>
+ <h2>Digital Loyalty, Simplified</h2>
+ <div class="cards">
+  <div class="card">
+   <h3>QR Stamp Card</h3>
+   <p>Customers can request stamps using a cafe QR code.</p>
+  </div>
+  <div class="card">
+   <h3>Owner Approval</h3>
+   <p>Stamps are added only after cafe staff approval.</p>
+  </div>
+  <div class="card">
+   <h3>Free Coffee Reward</h3>
+   <p>Collect 10 approved stamps and earn a free coffee.</p>
+  </div>
+  <div class="card">
+   <h3>Google Reviews</h3>
+   <p>Give customers an easy way to find your cafe review page.</p>
+  </div>
+ </div>
 </section>
 
-<section class="section" id="collection">
-  <h2>Our Collection</h2>
-
-  <div class="card">
-    <h3>Premium Stamps</h3>
-    <p>Explore our exclusive digital stamp collection.</p>
-  </div>
-
-  <div class="card">
-    <h3>Digital Repository</h3>
-    <p>A beautiful home for your digital stamp archive.</p>
-  </div>
-
-  <div class="card">
-    <h3>Coming Soon</h3>
-    <p>More exclusive collections are on the way.</p>
-  </div>
+<section>
+ <div class="tag">YOUR NEXT REWARD</div>
+ <h2>Collect. Enjoy. Repeat.</h2>
+ <div class="stamps">
+  <div class="stamp">1</div><div class="stamp">2</div>
+  <div class="stamp">3</div><div class="stamp">4</div>
+  <div class="stamp">5</div><div class="stamp">6</div>
+  <div class="stamp">7</div><div class="stamp">8</div>
+  <div class="stamp">9</div><div class="stamp">10</div>
+ </div>
+ <p style="color:#bcb5a8">10 stamps = 1 Free Coffee</p>
 </section>
 
 <footer>
-  © 2026 WENSS DIGITAL STAMP REPOSITORY
-  <br><br>
-  PREMIUM • ELEGANCE • COLLECTION
+ © 2026 WENSS Digital Stamp. All rights reserved.
 </footer>
 
 </body>
